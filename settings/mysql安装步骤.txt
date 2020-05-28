@@ -1,0 +1,13 @@
+mysqld --initialize --console
+
+mysqld install
+
+net start mysql
+
+mysql -u root -p
+
+alter user root@localhost identified by '111';
+
+show variables like'%time_zone'; 
+
+set global time_zone = '+8:00'; 
